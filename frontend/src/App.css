@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --color-yollow : #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+* > *{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  /* text-align: center; */
+  padding: 4em 0;
+}
+
+.bg-yellow{
+  background-color: var(--color-yollow);
+}
+
+.bg-purple{
+  background-color: var(--color-purple);
+}
+
+.chart .title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
+.twtwo{
+  padding-left: 20px;
+}
+
+.total1{
+display: none;
+}
+.total2{
+font-weight: 700;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #9d4edd;
+margin-top: 18px;
+}
+
+.title{
+  margin-top: -24px;
+}
+
+
+.App{
+  margin: 0;
+  padding: 0;
+}
+.nav-ul li{
+  display: inline-block;
+  padding: 10px;
+ 
+}
+.nav-ul{
+  /* background-color: rgb(16, 198, 198); */
+  background-color: #9d4edd;
+  padding: 5px;
+  margin-top: 0px;
+}
+.nav-ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+}
+.nav-right{
+  text-align: right;
+}
+
+
+.inputBox{
+  padding: 8px;
+  margin: 15px;
+  display: block;
+  width: 500px;
+  border: 1px solid #9d4edd ;
+}
+
+.signup button, .login button{
+  background-color: #9d4edd;
+  padding: 8px 20px;
+  font-size: 15px;
+  color: #fff;
+  width: 200px;
+  /* border: #fff; */
+  cursor: pointer;
+  border-radius: 5px;
+}
+.signup, .login{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+ }
+
+ .signup h1, .login h1{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 40px;
+ }
+
+ .invalid-span{
+  margin-top: -10px;
+  margin-left: -360px;
+  color: red;
+  
+}
+
+.input-group, .form-input{
+  margin-bottom: 2px;
+}
